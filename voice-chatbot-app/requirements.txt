@@ -1,7 +1,0 @@
-streamlit
-azure-cognitiveservices-speech
-openai
-pydub
-numpy
-requests
-python-dotenv
