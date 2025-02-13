@@ -55,7 +55,10 @@ jobs:
       - name: Garantir dependências essenciais
         run: pip install gunicorn uvicorn
 
-
+      - name: Run tests
+        run: |
+          source venv/bin/activate
+          pytest
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
       - name: Upload artifact for deployment jobs
