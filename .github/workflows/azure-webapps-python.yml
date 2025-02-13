@@ -71,6 +71,11 @@ jobs:
         run: |
           source venv/bin/activate
           pytest
+      - name: Run isolated tests with coverage
+        run: |
+            source venv/bin/activate
+            coverage run -m pytest
+            coverage report --fail-under=80
 
   deploy:
     runs-on: ubuntu-latest

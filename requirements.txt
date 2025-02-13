@@ -3,3 +3,4 @@ uvicorn
 gunicorn
 pytest
 httpx
+coverage
